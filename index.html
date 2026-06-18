@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VoyageLibre — Agence de voyage</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header : navigation en flexbox -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="#" class="logo">VoyageLibre</a>
+      <nav class="nav" aria-label="Navigation principale">
+        <ul class="nav__list">
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#populaires">Populaires</a></li>
+          <li><a href="#galerie">Galerie</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <img
+        class="hero__bg"
+        src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1920&q=90&fm=jpg"
+        srcset="
+          https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&q=85&fm=jpg 800w,
+          https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1400&q=90&fm=jpg 1400w,
+          https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1920&q=90&fm=jpg 1920w
+        "
+        sizes="100vw"
+        alt=""
+        aria-hidden="true"
+      >
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="hero__content">
+        <h1 id="hero-title">Explorez le monde à votre rythme</h1>
+        <p>
+          VoyageLibre vous accompagne dans la découverte de destinations uniques,
+          que vous recherchiez une escapade de week-end en Europe ou un voyage
+          d'aventure de plusieurs semaines à travers l'Asie. Notre équipe de
+          passionnés sélectionne chaque itinéraire avec soin pour vous offrir
+          des expériences authentiques, loin des sentiers battus. Partez léger,
+          revenez avec des souvenirs inoubliables.
+        </p>
+        <a href="#destinations" class="btn">Découvrir nos offres</a>
+      </div>
+    </section>
+
+    <!-- Grille destinations -->
+    <section id="destinations" class="section" aria-labelledby="dest-title">
+      <h2 id="dest-title">Nos destinations</h2>
+      <p class="section__intro">
+        Du soleil méditerranéen aux sommets enneigés des Alpes, trouvez le voyage
+        qui vous correspond parmi notre sélection.
+      </p>
+
+      <div class="grid-destinations">
+
+        <article class="grid-destinations__item grid-destinations__item--large">
+          <img
+            src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80"
+            alt="Montagnes enneigées au lever du soleil"
+            loading="lazy"
+          >
+          <div class="grid-destinations__text">
+            <h3>Alpes &amp; nature</h3>
+            <p>
+              Randonnées, lacs cristallins et villages de montagne : l'idéal
+              pour se ressourcer loin de l'agitation urbaine.
+            </p>
+          </div>
+        </article>
+
+        <article class="grid-destinations__item">
+          <img
+            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=85&fm=jpg"
+            alt="Plage tropicale avec eau turquoise et palmiers"
+            loading="lazy"
+          >
+          <div class="grid-destinations__text">
+            <h3>Plages tropicales</h3>
+            <p>Sable fin et eaux chaudes.</p>
+          </div>
+        </article>
+
+        <article class="grid-destinations__item">
+          <img
+            src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800&q=85&fm=jpg"
+            alt="Tour Eiffel et skyline de Paris au crépuscule"
+            loading="lazy"
+          >
+          <div class="grid-destinations__text">
+            <h3>Villes d'art</h3>
+            <p>
+              Musées, architecture et gastronomie locale dans les plus belles
+              capitales culturelles d'Europe.
+            </p>
+          </div>
+        </article>
+
+        <article class="grid-destinations__item">
+          <img
+            src="https://images.unsplash.com/photo-1761860630191-42a23635970a?w=800&q=85&fm=jpg"
+            alt="Dunes de sable doré dans le désert"
+            loading="lazy"
+          >
+          <div class="grid-destinations__text">
+            <h3>Désert &amp; aventure</h3>
+            <p>Nuits étoilées sous la tente bédouine.</p>
+          </div>
+        </article>
+
+        <article class="grid-destinations__item">
+          <img
+            src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=600&q=80"
+            alt="Route de campagne au coucher du soleil"
+            loading="lazy"
+          >
+          <div class="grid-destinations__text">
+            <h3>Road trip</h3>
+            <p>
+              Parcourez des routes panoramiques à votre rythme, en voiture
+              de location ou en camping-car.
+            </p>
+          </div>
+        </article>
+
+        <article class="grid-destinations__item">
+          <img
+            src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=600&q=80"
+            alt="Lac entouré de forêts"
+            loading="lazy"
+          >
+          <div class="grid-destinations__text">
+            <h3>Lacs &amp; forêts</h3>
+            <p>Calme et nature préservée.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Bloc scroll horizontal -->
+    <section id="populaires" class="section section--scroll" aria-labelledby="pop-title">
+      <h2 id="pop-title">Destinations populaires</h2>
+      <p class="section__intro">Faites défiler pour découvrir nos coups de cœur du moment.</p>
+
+      <div class="scroll-row" tabindex="0" aria-label="Liste horizontale de destinations populaires">
+        <article class="scroll-card">
+          <img
+            src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=500&q=80"
+            alt="Canal de Venise"
+            loading="lazy"
+          >
+          <h3>Venise</h3>
+          <p>La Sérénissime et ses canaux romantiques.</p>
+        </article>
+        <article class="scroll-card">
+          <img
+            src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=500&q=80"
+            alt="Tour de Tokyo de nuit"
+            loading="lazy"
+          >
+          <h3>Tokyo</h3>
+          <p>Mégapole futuriste et traditions millénaires.</p>
+        </article>
+        <article class="scroll-card">
+          <img
+            src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=500&q=80"
+            alt="Skyline de Dubaï"
+            loading="lazy"
+          >
+          <h3>Dubaï</h3>
+          <p>Luxe et désert.</p>
+        </article>
+        <article class="scroll-card">
+          <img
+            src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=500&q=80"
+            alt="Colisée de Rome"
+            loading="lazy"
+          >
+          <h3>Rome</h3>
+          <p>
+            Histoire antique, art de la table et dolce vita au cœur de
+            l'Italie.
+          </p>
+        </article>
+        <article class="scroll-card">
+          <img
+            src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=500&q=80"
+            alt="Opéra de Sydney et port"
+            loading="lazy"
+          >
+          <h3>Sydney</h3>
+          <p>Océan, surf et culture australienne.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Galerie, témoignages -->
+    <section id="galerie" class="section" aria-labelledby="gal-title">
+      <h2 id="gal-title">Moments de voyage</h2>
+      <p class="section__intro">
+        Quelques clichés pris par nos voyageurs lors de leurs dernières
+        expéditions avec VoyageLibre.
+      </p>
+
+      <div class="gallery">
+        <figure class="gallery__item">
+          <img
+            src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=600&q=80"
+            alt="Carte du monde et accessoires de voyage"
+            loading="lazy"
+          >
+          <figcaption>Préparer son itinéraire</figcaption>
+        </figure>
+        <figure class="gallery__item">
+          <img
+            src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=600&q=80"
+            alt="Cascade en pleine nature"
+            loading="lazy"
+          >
+          <figcaption>Nature sauvage</figcaption>
+        </figure>
+        <figure class="gallery__item">
+          <img
+            src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=600&q=80"
+            alt="Lac de montagne au crépuscule"
+            loading="lazy"
+          >
+          <figcaption>
+            « Un paysage à couper le souffle, exactement comme promis par
+            l'agence. » — Marie, voyageuse
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer : flexbox -->
+  <footer id="contact" class="footer">
+    <div class="footer__inner">
+      <div class="footer__col">
+        <h3>VoyageLibre</h3>
+        <p>Votre partenaire pour des voyages responsables et mémorables.</p>
+      </div>
+      <div class="footer__col">
+        <h3>Liens utiles</h3>
+        <ul>
+          <li><a href="#">À propos</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Mentions légales</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3>Contact</h3>
+        <p>contact@voyagelibre.fr</p>
+        <p>01 23 45 67 89</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
